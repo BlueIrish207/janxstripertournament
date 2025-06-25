@@ -1,5 +1,32 @@
 
-body{font-family:Arial;background:#f0f8ff;color:#00274D;}
-header,footer{background:#00274D;color:white;text-align:center;padding:1rem;}
-nav a{margin:0 10px;color:white;text-decoration:none;}
-main{padding:1rem;}
+body {
+  background: url('images/lighthouse.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  padding: 20px;
+}
+
+footer .sponsor {
+  margin-top: 10px;
+}
+
+footer .sponsor img {
+  height: 50px;
+}
