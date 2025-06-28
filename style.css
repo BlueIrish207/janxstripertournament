@@ -1,16 +1,27 @@
 
 body {
-  background: url('Lighthouse.jpg') no-repeat center center fixed;
-  background-size: cover;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 200px;
+  background: url('Lighthouse.jpg') no-repeat center top;
+  background-size: contain;
 }
 
 nav {
   background-color: #00274d;
   padding: 10px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
@@ -36,11 +47,12 @@ nav ul li a:hover {
 
 main {
   background-color: rgba(255, 255, 255, 0.95);
-  margin: 20px auto;
-  padding: 20px;
   max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-top: 220px;
 }
 
 footer {
