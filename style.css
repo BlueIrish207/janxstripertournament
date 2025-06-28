@@ -11,7 +11,7 @@ body::before {
   content: "";
   display: block;
   height: 200px;
-  background: url('Lighthouse.jpg') no-repeat center top;
+  background: url('https://raw.githubusercontent.com/BlueIrish207/janxstripertournament/main/Lighthouse.jpg') no-repeat center top;
   background-size: contain;
 }
 
