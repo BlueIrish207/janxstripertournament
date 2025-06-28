@@ -14,13 +14,13 @@ nav {
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 15px;
 }
 
@@ -36,15 +36,42 @@ nav ul li a:hover {
 
 main {
   background-color: rgba(255, 255, 255, 0.95);
-  max-width: 1000px;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 20px;
+  max-width: 1000px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 footer {
+  background-color: rgba(255, 255, 255, 0.85);
   text-align: center;
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
+}
+
+footer .sponsor {
+  margin-top: 10px;
+}
+
+footer .sponsor img {
+  height: 50px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery img {
+  width: 220px;
+  height: auto;
+  border: 3px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.gallery img:hover {
+  border-color: #00274d;
+  transform: scale(1.05);
 }
